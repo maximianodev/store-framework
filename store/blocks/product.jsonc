@@ -14,13 +14,18 @@
     "children": ["product-images"]
   },
 
+  "product-price": {
+    "props": {
+      "showSavings": true,
+      "showListPrice": true
+    }
+  },
+
   "flex-layout.col#right": {
     "children": ["product-name", "product-price", "buy-button"],
     "props": {
       "preventVerticalStretch": true,
-      "verticalAlign": "middle",
-      "showSavings": true,
-      "showListPrice": true
+      "verticalAlign": "middle"
     }
   }
 }
