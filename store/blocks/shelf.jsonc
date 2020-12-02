@@ -1,8 +1,9 @@
+// ISSUE 8
 {
   "shelf": {
     "blocks": ["product-summary.shelf"],
     "props": {
-      "category": 1,
+      "category": 3,
       "orderBy": "OrderByTopSaleDESC",
       "paginationDotsVisibility": "desktopOnly",
       "productList": {
