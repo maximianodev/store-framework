@@ -1,26 +1,28 @@
+//issue 21 landing
+
 {
-  "store.custom#landing": {
-    "blocks": ["image#landingbanner", "search-result-layout.customQuery"]
+  "store.custom#landing": { 
+    "blocks": [
+      "image#landingbanner", 
+      "search-result-layout.customQuery"
+    ]
   },
 
   "image#landingbanner": {
     "props": {
-      "minWidth": "100%",
-      "src": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-about-us.png"
+        "src": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-about-us.png",
+        "minWidth": "100%"
     }
   },
 
-  "search-result-layout.customQuery": {
+  "search-result-layout.customQuery" : {
     "props": {
       "querySchema": {
-        "orderByField": "OrderByReleaseDateDESC",
-        "hideUnavailableItems": true,
-        "maxItemsPerPage": 8,
-        "queryField": "Camera",
-        "mapField": "ft",
-        "skusFilter": "ALL_AVAILABLE"
-      },
-      "blocks": ["search-result-layout.desktop"]
+          "orderByField": "OrderByReleaseDateDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 8,
+          "queryField": "Blue Top Retro Camera"
+      }
     }
   }
 }

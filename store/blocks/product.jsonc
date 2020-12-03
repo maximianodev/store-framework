@@ -1,38 +1,40 @@
 {
   "store.product": {
     "children": [
-      "breadcrumb", // ISSUE 12 
-      "flex-layout.row#main", // ISSUE 11 
-      "shelf.relatedProducts" // ISSUE 13
+      "breadcrumb", //issue 12 pdp2
+      "flex-layout.row#main", //issue 11 pdp
+      "shelf.relatedProducts" //issue 13 pdp3
     ]
   },
 
-  // ISSUE 11 
-  "flex-layout.row#main": {
-    "props": {
+  //issue 11 pdp
+  "flex-layout.row#main": { 
+    "props": { 
       "marginTop": 6
     },
     "children": [
-      "flex-layout.col#left", 
+      "flex-layout.col#left",
       "flex-layout.col#right"
     ]
   },
 
   "flex-layout.col#left": {
-    "children": ["stack-layout#brand"] // ISSUE 13
+    "children": [
+      "stack-layout#brand" //issue 13 pdp3
+    ]
   },
 
   "flex-layout.col#right": {
     "props": {
-      "preventVerticalStretch": true,
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true
     },
     "children": [
-      "product-name", 
-      "product-identifier.product", // ISSUE 12 
-      "product-price", 
-      "flex-layout.row#qty-sku", // ISSUE 12 
-      "shipping-simulator", // ISSUE 12 
+      "product-name",
+      "product-identifier.product", //issue 12 pdp2
+      "product-price",
+      "flex-layout.row#qty-sku", //issue 12 pdp2
+      "shipping-simulator", //issue 12 pdp2
       "buy-button"
     ]
   },
@@ -44,7 +46,7 @@
     }
   },
 
-  // ISSUE 12 
+  //issue 12 pdp2
   "flex-layout.row#qty-sku": {
     "children": [
       "sku-selector",
@@ -52,15 +54,14 @@
     ]
   },
 
-
-  // ISSUE 13
-  "stack-layout#brand" : {
+  //issue 13 pdp3
+  "stack-layout#brand": {
     "children": [
       "product-images",
       "product-brand"
     ]
   },
-
+  
   "product-brand": {
     "props": {
       "height": 30,
